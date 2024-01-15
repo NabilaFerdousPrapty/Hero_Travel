@@ -32,9 +32,9 @@ nav {
 }
 .menu ul li a {
   text-decoration: none;
+  color: var(--Dark-02, #424247);
 }
 .menu ul li {
-  color: var(--Dark-02, #424247);
   text-align: center;
   font-size: 18px;
 }
@@ -54,7 +54,7 @@ nav {
   color: #ff5400;
 }
 .active {
-  color: #ff5400;
+  color: #ff5400 !important;
   font-weight: 700;
 }
 /* ......................
@@ -238,19 +238,88 @@ choose destination section starts here
 
 .grid-text {
   position: relative;
-  top: -180px;
+  top: -190px;
   left: 0px;
   color: #fff;
   text-align: center;
   font-size: 28px;
   font-weight: 800;
 }
+/* ....................................
+choose destination section ends here
+...................................... */
+
+/* ....................................
+why choose us section starts here 
+...................................*/
+.why-choose-us {
+  text-align: center;
+}
+.why-choose-us-title {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+  padding: 24px 0px;
+}
+.why-choose-us-text{
+    color: rgba(19, 19, 24, 0.70);
+font-size: 16px;
+line-height: 26px; /* 162.5% */
+}
+
+.why-choose-us-content{
+   
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 24px;
+}
+.choose-us-item-1{
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+    border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+padding: 32px;
+}
+.choose-us-item-2{
+    grid-column: 7 / span 6;
+    grid-row: 1 / span 1;
+    border-radius: 16px;
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+padding: 32px;
+}
+.choose-us-item-3{
+    grid-column: 4/ span 6;
+    grid-row: 2 / span 1;
+    border-radius: 16px;
+border: 1px solid rgba(233, 68, 68, 0.20);
+background: rgba(233, 68, 68, 0.05);
+padding: 32px;
+}
+.why-choose-us-text{
+    padding: 24px 0px 48px 0px;
+    max-width: 553px;
+    margin: 0 auto;
+
+}
+.choose-us-item-title{
+    padding: 32px 0px 16px 0px;
+}
+/* ......................
+main section ends here
+.........................*/
 
 @media screen and (max-width: 1460px) and (min-width: 1200px) {
-  .banner-box {
-    padding: 10px;
-  }
+    
+    .banner-box {
+        padding: 10px;
+      }
 }
+  
+
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   .section {
     padding: 50px 25px;
@@ -504,4 +573,28 @@ choose destination section starts here
     grid-column: 1 / span 1;
     grid-row: 7 / span 1;
   }
+
+  .why-choose-us-content{
+   
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 24px;
+}
+.choose-us-item-1{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    
+}
+.choose-us-item-2{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    
+}
+.choose-us-item-3{
+    grid-column: 1/ span 1;
+    grid-row: 3/ span 1;
+   
+}
 }
