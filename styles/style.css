@@ -134,17 +134,14 @@ popular tours section starts here
 ........................*/
 
 .popular-tours {
-  
   margin-top: 50px;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   gap: 30px;
- 
 }
-.tour-image{
-    width: 100%;
-    
+.tour-image {
+  width: 100%;
 }
 
 .popular-tours-text,
@@ -159,8 +156,8 @@ popular tours section starts here
   font-size: 40px;
   font-weight: 800;
 }
-.popular-tours-content{
-    max-width: 577px;
+.popular-tours-content {
+  max-width: 577px;
 }
 .popular-tours-list {
   margin-left: 20px;
@@ -171,6 +168,84 @@ popular tours section starts here
 .tour-btn {
   margin-top: 45px;
 }
+/* ....................................
+choose destination section starts here
+...................................... */
+.choose-destination {
+  margin-top: 50px;
+  text-align: center;
+}
+.destination-title {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+}
+.destination-text {
+  padding: 24px 0px;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  line-height: 26px; /* 162.5% */
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+.grid-image {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    lightgray 50% / cover no-repeat;
+}
+.grid-image-1 {
+  grid-column: 1 / span 6;
+  grid-row: 1 / span 1;
+  border-radius: 16px;
+}
+.grid-image-2 {
+  grid-column: 7 / span 6;
+  grid-row: 1 / span 1;
+  border-radius: 16px;
+}
+.grid-image-3 {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
+}
+.grid-image-4 {
+  grid-column: 4 / span 6;
+  grid-row: 2 / span 1;
+}
+.grid-image-5 {
+  grid-column: 10 / span 3;
+  grid-row: 2 / span 1;
+}
+.grid-image-6 {
+  grid-column: 1 / span 4;
+  grid-row: 3 / span 1;
+}
+.grid-image-7 {
+  grid-column: 5 / span 8;
+  grid-row: 3 / span 1;
+}
+
+.grid-text {
+  position: relative;
+  top: -180px;
+  left: 0px;
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+}
+
 @media screen and (max-width: 1460px) and (min-width: 1200px) {
   .banner-box {
     padding: 10px;
@@ -190,23 +265,22 @@ popular tours section starts here
     border-radius: 16px;
   }
   .popular-tours-text,
-.popular-tours-description {
-  color: rgba(19, 19, 24, 0.7);
-  font-size: 12px;
-  line-height: 19px; /* 162.5% */
-  margin: 19px 0px;
-}
-.popular-tours-title {
-  color: #131318;
-  font-size: 36px;
-
-}
-.popular-tours-list {
-  margin-left: 15px;
- font-size: 12px;
-  line-height: 24.3px; /* 162.5% */
-}
-.tour-btn {
+  .popular-tours-description {
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 12px;
+    line-height: 19px; /* 162.5% */
+    margin: 19px 0px;
+  }
+  .popular-tours-title {
+    color: #131318;
+    font-size: 36px;
+  }
+  .popular-tours-list {
+    margin-left: 15px;
+    font-size: 12px;
+    line-height: 24.3px; /* 162.5% */
+  }
+  .tour-btn {
     margin-top: 35px;
   }
 }
@@ -236,32 +310,29 @@ popular tours section starts here
     width: 100%;
   }
   .popular-tours {
-    
     margin-top: 26px;
     gap: 18px;
-    
   }
   .popular-tours-text,
-.popular-tours-description {
-  color: rgba(19, 19, 24, 0.7);
-  font-size: 12px;
-  line-height: 19px; /* 162.5% */
-  margin: 19px 0px;
-}
-.popular-tours-title {
-  color: #131318;
-  font-size: 30px;
-
-}
-.popular-tours-list {
-  margin-left: 12px;
- font-size: 10px;
-  line-height: 16.5px; /* 162.5% */
-}
-.tour-btn {
+  .popular-tours-description {
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 12px;
+    line-height: 19px; /* 162.5% */
+    margin: 19px 0px;
+  }
+  .popular-tours-title {
+    color: #131318;
+    font-size: 30px;
+  }
+  .popular-tours-list {
+    margin-left: 12px;
+    font-size: 10px;
+    line-height: 16.5px; /* 162.5% */
+  }
+  .tour-btn {
     margin-top: 30px;
   }
-  .tour-image{
+  .tour-image {
     width: 100%;
   }
 }
@@ -283,7 +354,7 @@ popular tours section starts here
   }
   .popular-tours {
     margin-top: 20px;
-   flex-direction: column;
+    flex-direction: column;
     gap: 25px;
   }
   .popular-tour-image {
@@ -291,7 +362,7 @@ popular tours section starts here
     height: 90%;
     border-radius: 16px;
   }
-  
+
   .popular-tours-text,
   .popular-tours-description {
     color: rgba(19, 19, 24, 0.7);
@@ -307,11 +378,47 @@ popular tours section starts here
   .popular-tours-list {
     margin-left: 20px;
     color: rgba(19, 19, 24, 0.7);
-  
+
     line-height: 26px; /* 162.5% */
   }
   .tour-btn {
     margin-top: 45px;
+  }
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 10px;
+  }
+  .grid-image-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    border-radius: 16px;
+  }
+  .grid-image-2 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    border-radius: 16px;
+  }
+  .grid-image-3 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .grid-image-4 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+  .grid-image-5 {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+  }
+  .grid-image-6 {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+  }
+  .grid-image-7 {
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
   }
 }
 @media screen and (max-width: 575px) and (min-width: 320px) {
@@ -341,11 +448,60 @@ popular tours section starts here
   }
   .popular-tours {
     margin-top: 20px;
-   flex-direction: column;
+    flex-direction: column;
     gap: 25px;
   }
-  .tour-image{
+  .tour-image {
     margin-top: 20px;
     width: 90%;
+    margin: 0 auto;
+  }
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 10px;
+  }
+  .destination-title {
+    color: #131318;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .destination-text {
+    padding: 24px 0px;
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 14px;
+    line-height: 22.75px; /* 162.5% */
+  }
+
+  .grid-image-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    border-radius: 16px;
+  }
+  .grid-image-2 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    border-radius: 16px;
+  }
+  .grid-image-3 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .grid-image-4 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+  .grid-image-5 {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+  }
+  .grid-image-6 {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+  }
+  .grid-image-7 {
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
   }
 }
