@@ -8,6 +8,7 @@
 }
 .section {
   padding: 50px 135px;
+  margin: 0 auto;
 }
 /* ......................
 header section starts here  
@@ -70,52 +71,52 @@ banner section starts here
       rgba(19, 19, 24, 0) 100%
     ),
     url("../Images/banner-image.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 90%;
   margin: 0 auto;
   margin-top: 50px;
 }
-.banner-content{
-    text-align: center;
+.banner-content {
+  text-align: center;
 }
-.banner-title{
-    color: #FFF;
-font-family: Mulish;
-font-size: 64px;
-font-weight: 800;
-padding: 24px 0px;
+.banner-title {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 64px;
+  font-weight: 800;
+  padding: 24px 0px;
 }
-.banner-box{
-    margin-top: 48px;
-    border-radius: 8px;
-background: rgba(255, 255, 255, 0.30);
-display: inline-flex;
-gap: 24px;
-padding: 20px;
+.banner-box {
+  margin-top: 48px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  display: inline-flex;
+  gap: 24px;
+  padding: 20px;
 }
 
-.When,.Where-go,.Type {
+.When,
+.Where-go,
+.Type {
   border-radius: 8px;
   background: #fff;
   border: none;
   padding: 14px 20px;
-  
 }
-.banner-text{
-    color: #FFF;
-font-size: 16px;
-line-height: 26px; /* 162.5% */
+.banner-text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px; /* 162.5% */
 }
-.primary-btn{
-    border-radius: 8px;
-background: #FF5400;
-padding: 14px 20px;
-border: none;
-text-align: center;
-text-decoration: none;
-color: #FFF;
-
+.primary-btn {
+  border-radius: 8px;
+  background: #ff5400;
+  padding: 14px 20px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
 }
 /* ......................
 banner section ends here
@@ -124,19 +125,90 @@ banner section ends here
 /* ......................
 header section ends here
 .........................*/
+/* ......................
+main section starts here 
+........................*/
 
-@media screen and (max-width: 1460px) and (min-width: 1200px) {
-    .banner-box{
-        
-    padding: 10px;
-    }
+/* ......................
+popular tours section starts here
+........................*/
+
+.popular-tours {
+  
+  margin-top: 50px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  gap: 30px;
+ 
+}
+.tour-image{
+    width: 100%;
     
+}
+
+.popular-tours-text,
+.popular-tours-description {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  line-height: 26px; /* 162.5% */
+  margin: 24px 0px;
+}
+.popular-tours-title {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+}
+.popular-tours-content{
+    max-width: 577px;
+}
+.popular-tours-list {
+  margin-left: 20px;
+  color: rgba(19, 19, 24, 0.7);
+
+  line-height: 26px; /* 162.5% */
+}
+.tour-btn {
+  margin-top: 45px;
+}
+@media screen and (max-width: 1460px) and (min-width: 1200px) {
+  .banner-box {
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   .section {
     padding: 50px 25px;
   }
-  
+  .popular-tours {
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .popular-tour-image {
+    width: 70%;
+    height: 70%;
+    border-radius: 16px;
+  }
+  .popular-tours-text,
+.popular-tours-description {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 12px;
+  line-height: 19px; /* 162.5% */
+  margin: 19px 0px;
+}
+.popular-tours-title {
+  color: #131318;
+  font-size: 36px;
+
+}
+.popular-tours-list {
+  margin-left: 15px;
+ font-size: 12px;
+  line-height: 24.3px; /* 162.5% */
+}
+.tour-btn {
+    margin-top: 35px;
+  }
 }
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .section {
@@ -148,19 +220,49 @@ header section ends here
   .logo {
     font-size: 24px;
   }
-  .banner-title{
-font-size: 56px;
-
-}
-  .banner-box{
-    flex-direction: column;
+  .banner-title {
+    font-size: 56px;
   }
-  .When,.Where-go,.Type {
+  .banner-box {
+    flex-direction: column;
+    width: 90%;
+  }
+  .When,
+  .Where-go,
+  .Type {
     border-radius: 8px;
     background: #fff;
     border: none;
-   width: 100%;
+    width: 100%;
+  }
+  .popular-tours {
     
+    margin-top: 26px;
+    gap: 18px;
+    
+  }
+  .popular-tours-text,
+.popular-tours-description {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 12px;
+  line-height: 19px; /* 162.5% */
+  margin: 19px 0px;
+}
+.popular-tours-title {
+  color: #131318;
+  font-size: 30px;
+
+}
+.popular-tours-list {
+  margin-left: 12px;
+ font-size: 10px;
+  line-height: 16.5px; /* 162.5% */
+}
+.tour-btn {
+    margin-top: 30px;
+  }
+  .tour-image{
+    width: 100%;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 576px) {
@@ -173,13 +275,44 @@ font-size: 56px;
   .logo {
     font-size: 20px;
   }
-  .banner-box{
+  .banner-box {
     flex-direction: column;
   }
-  .banner-title{
+  .banner-title {
     font-size: 48px;
-    
-    }
+  }
+  .popular-tours {
+    margin-top: 20px;
+   flex-direction: column;
+    gap: 25px;
+  }
+  .popular-tour-image {
+    width: 90%;
+    height: 90%;
+    border-radius: 16px;
+  }
+  
+  .popular-tours-text,
+  .popular-tours-description {
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 16px;
+    line-height: 26px; /* 162.5% */
+    margin: 24px 0px;
+  }
+  .popular-tours-title {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .popular-tours-list {
+    margin-left: 20px;
+    color: rgba(19, 19, 24, 0.7);
+  
+    line-height: 26px; /* 162.5% */
+  }
+  .tour-btn {
+    margin-top: 45px;
+  }
 }
 @media screen and (max-width: 575px) and (min-width: 320px) {
   .section {
@@ -200,11 +333,19 @@ font-size: 56px;
     flex-direction: column;
     gap: 18px;
   }
-  .banner-box{
+  .banner-box {
     flex-direction: column;
   }
-  .banner-title{
+  .banner-title {
     font-size: 36px;
-    
-    }
+  }
+  .popular-tours {
+    margin-top: 20px;
+   flex-direction: column;
+    gap: 25px;
+  }
+  .tour-image{
+    margin-top: 20px;
+    width: 90%;
+  }
 }
