@@ -229,16 +229,16 @@ choose destination section starts here
   grid-row: 3 / span 1;
 }
 .grid-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-    pointer-events: none;
-  }
-  
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+}
+
 .grid-text {
   position: relative;
   top: -190px;
@@ -353,7 +353,7 @@ deals and discount section starts here
   padding: 16px 0px 24px 0px;
 }
 
-.flexbox-1{
+.flexbox-1 {
   position: relative;
 }
 .image-div1 {
@@ -371,9 +371,9 @@ deals and discount section starts here
 .book-btn {
   margin-top: 24px;
 }
-.flex-box2{
-    position: relative;
-    margin: 24px 0px;
+.flex-box2 {
+  position: relative;
+  margin: 24px 0px;
 }
 .image-div2 {
   text-align: left;
@@ -383,60 +383,128 @@ deals and discount section starts here
   backdrop-filter: blur(2.5px);
   max-width: 579px;
   position: absolute;
-  top:18% ;
-  left:26% ;
+  top: 18%;
+  left: 26%;
   padding: 56px 56px 56px 56px;
   z-index: 2;
 }
-.flex-bg{
-    max-width: 100%;
-    min-height: 500px;
+.flex-bg {
+  max-width: 100%;
+  min-height: 500px;
 }
 .package-btn {
   margin-top: 48px;
 }
 /* 
 .perfect-place section starts header */
-.perfect-place{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.perfect-place {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.perfect-place-content{
-    max-width: 540px;
+.perfect-place-content {
+  max-width: 540px;
 }
-.perfect-place-title{
-    color: #131318;
-font-size: 40px;
-font-weight: 800;
-line-height: 60px; /* 150% */
+.perfect-place-title {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 60px; /* 150% */
 }
-.perfect-place-text{
-    color: #5A5A5D;
-font-size: 16px;
-line-height: 26px; /* 162.5% */
-padding: 24px 0px;
+.perfect-place-text {
+  color: #5a5a5d;
+  font-size: 16px;
+  line-height: 26px; /* 162.5% */
+  padding: 24px 0px;
 }
-.perfect-place-list{
-    margin-left: 20px;
-    color: #131318;
-font-weight: 700;
-line-height: 26px; /* 162.5% */
+.perfect-place-list {
+  margin-left: 20px;
+  color: #131318;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
 }
-.place-btn{
-    margin-top: 32px;
+.place-btn {
+  margin-top: 32px;
 }
 .video-box {
-    max-width: 100%;
-    margin: 0 auto;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 video {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.newsletter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.newsletter-content {
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  max-width: 427px;
+}
+.newsletter-title {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 40px 10px 24px 40px;
+}
+.newsletter-text {
+  color: #5a5a5d;
+  font-size: 16px;
+  line-height: 26px; /* 162.5% */
+  padding: 0px 10px 24px 40px;
+}
+.newsletter-form {
+  border-top: 1px solid rgba(19, 19, 24, 0.1);
+  margin: 0px 10px 24px 40px;
+}
+.newsletter-form input {
+  border-radius: 8px;
+  display: inline-block;
+  width: 90%;
+  padding: 16px 20px;
+  height: 50px;
+  border: none;
+  margin: 16px 0px 16px 0px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
 }
 
+.subscribe {
+  display: inline-block;
+  width: 90%;
+}
+.newsletter-image {
+  width: 100%;
+}
+.image-badge {
+  transform: rotate(-19.628deg);
+  border-radius: 16px;
+  background: #ff5400;
+  width: 324px;
+  height: 120px;
+  flex-shrink: 0;
+  text-align: center;
+  position: absolute;
+  top: 55%;
+    left: 65%;
+}
+.image-badge p {
+  padding-top: 20px;
+  color: #fff;
+
+  font-size: 24px;
+}
+.image-badge h3{
+    color: #FFF;
+font-size: 32px;
+font-weight: 800;
+}
 /* ......................
 main section ends here
 .........................*/
@@ -446,13 +514,15 @@ main section ends here
     padding: 10px;
   }
   .image-div2 {
-    
-    top:18% ;
-    left:10% ;
+    top: 18%;
+    left: 10%;
   }
-  .perfect-place{
+  .perfect-place {
     justify-content: space-between;
-}
+  }
+  .newsletter {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 992px) {
@@ -487,14 +557,45 @@ main section ends here
   .tour-btn {
     margin-top: 35px;
   }
-  
-  .image-div1{
+
+  .image-div1 {
     top: 18%;
     left: 36%;
   }
   .image-div2 {
     top: 18%;
     left: 7%;
+  }
+  .newsletter {
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .newsletter-image {
+    width: 90%;
+  }
+  .newsletter-content {
+    max-width: 390px;
+  }
+  .image-badge {
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #ff5400;
+    width: 280px;
+    height: 100px;
+    flex-shrink: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+      left: 60%;
+  }
+  .image-badge p {
+    padding-top: 18px;
+  
+    font-size: 21px;
+  }
+  .image-badge h3{
+  font-size: 28px;
+ 
   }
 }
 @media screen and (max-width: 991px) and (min-width: 768px) {
@@ -548,7 +649,7 @@ main section ends here
   .tour-image {
     width: 100%;
   }
-  .image-div1{
+  .image-div1 {
     top: 14%;
     left: 10%;
     padding: 36px;
@@ -558,10 +659,26 @@ main section ends here
     left: 10%;
     padding: 36px;
   }
-  .perfect-place{
-   flex-direction: column;
-   gap: 20px;
-}
+  .perfect-place {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .newsletter {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .image-badge {
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #ff5400;
+    width: 280px;
+    height: 100px;
+    flex-shrink: 0;
+    text-align: center;
+    position: absolute;
+    top: 75%;
+      left: 55%;
+  }
 }
 @media screen and (max-width: 767px) and (min-width: 576px) {
   .section {
@@ -647,7 +764,7 @@ main section ends here
     grid-column: 1 / span 1;
     grid-row: 7 / span 1;
   }
-  .image-div1{
+  .image-div1 {
     top: 14%;
     left: 1.8%;
     padding: 28px;
@@ -657,10 +774,26 @@ main section ends here
     left: 1.8%;
     padding: 20px;
   }
-  .perfect-place{
+  .perfect-place {
     flex-direction: column;
     gap: 15px;
- }
+  }
+  .newsletter {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .image-badge {
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #ff5400;
+    width: 280px;
+    height: 100px;
+    flex-shrink: 0;
+    text-align: center;
+    position: absolute;
+    top: 75%;
+      left: 50%;
+  }
 }
 @media screen and (max-width: 575px) and (min-width: 320px) {
   .section {
@@ -765,7 +898,7 @@ main section ends here
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
   }
-  .image-div1{
+  .image-div1 {
     top: 14%;
     left: 0%;
     padding: 18px;
@@ -775,11 +908,36 @@ main section ends here
     left: 0%;
     padding: 18px;
   }
-  .perfect-place{
+  .perfect-place {
     flex-direction: column;
     gap: 10px;
- }
- .video-box {
+  }
+  .video-box {
     width: 100%;
-}
+  }
+  .newsletter {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .image-badge {
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #ff5400;
+    width: 180px;
+    height: 70px;
+    flex-shrink: 0;
+    text-align: center;
+    position: absolute;
+    top: 80%;
+      left: 25%;
+  }
+  .image-badge p {
+    padding-top: 18px;
+  
+    font-size: 15px;
+  }
+  .image-badge h3{
+  font-size: 21px;
+ 
+  }
 }
