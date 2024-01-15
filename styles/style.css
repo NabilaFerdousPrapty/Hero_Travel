@@ -12,6 +12,9 @@
 /* ......................
 header section starts here  
 .........................*/
+/* ......................
+nav section starts here  
+.........................*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -26,10 +29,10 @@ nav {
 .menu ul li {
   list-style: none;
 }
-.menu ul li a{
-    text-decoration: none;
+.menu ul li a {
+  text-decoration: none;
 }
-.menu ul li  {
+.menu ul li {
   color: var(--Dark-02, #424247);
   text-align: center;
   font-size: 18px;
@@ -53,12 +56,87 @@ nav {
   color: #ff5400;
   font-weight: 700;
 }
+/* ......................
+nav section ends here  
+.........................*/
+/* ......................
+banner section starts here
+.........................*/
+.banner {
+  border-radius: 16px;
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../Images/banner-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.banner-content{
+    text-align: center;
+}
+.banner-title{
+    color: #FFF;
+font-family: Mulish;
+font-size: 64px;
+font-weight: 800;
+padding: 24px 0px;
+}
+.banner-box{
+    margin-top: 48px;
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.30);
+display: inline-flex;
+gap: 24px;
+padding: 20px;
+}
 
+.When,.Where-go,.Type {
+  border-radius: 8px;
+  background: #fff;
+  border: none;
+  padding: 14px 20px;
+  
+}
+.banner-text{
+    color: #FFF;
+font-size: 16px;
+line-height: 26px; /* 162.5% */
+}
+.primary-btn{
+    border-radius: 8px;
+background: #FF5400;
+padding: 14px 20px;
+border: none;
+text-align: center;
+text-decoration: none;
+color: #FFF;
+
+}
+/* ......................
+banner section ends here
+.........................*/
+
+/* ......................
+header section ends here
+.........................*/
+
+@media screen and (max-width: 1460px) and (min-width: 1200px) {
+    .banner-box{
+        
+    padding: 10px;
+    }
+    
+}
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   .section {
     padding: 50px 25px;
   }
-    
+  
 }
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .section {
@@ -69,6 +147,20 @@ nav {
   }
   .logo {
     font-size: 24px;
+  }
+  .banner-title{
+font-size: 56px;
+
+}
+  .banner-box{
+    flex-direction: column;
+  }
+  .When,.Where-go,.Type {
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+   width: 100%;
+    
   }
 }
 @media screen and (max-width: 767px) and (min-width: 576px) {
@@ -81,6 +173,13 @@ nav {
   .logo {
     font-size: 20px;
   }
+  .banner-box{
+    flex-direction: column;
+  }
+  .banner-title{
+    font-size: 48px;
+    
+    }
 }
 @media screen and (max-width: 575px) and (min-width: 320px) {
   .section {
@@ -93,13 +192,19 @@ nav {
   .logo {
     font-size: 18px;
   }
-    .menu ul {
-        flex-direction: column;
-        gap: 18px;
-    }
   .menu ul {
     flex-direction: column;
     gap: 18px;
   }
+  .menu ul {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .banner-box{
+    flex-direction: column;
+  }
+  .banner-title{
+    font-size: 36px;
     
+    }
 }
