@@ -57,6 +57,15 @@ nav {
   color: #ff5400 !important;
   font-weight: 700;
 }
+
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: var(--Dark-02, #424247);
+  margin: 6px 0;
+}
+
 /* ......................
 nav section ends here  
 .........................*/
@@ -109,6 +118,7 @@ banner section starts here
   font-size: 16px;
   line-height: 26px; /* 162.5% */
 }
+
 .primary-btn {
   border-radius: 8px;
   background: #ff5400;
@@ -319,7 +329,7 @@ deals and discount section starts here
 .deals-and-discount {
   text-align: center;
 }
-.deals-and-discount-title {
+.deals-and-discount-title,.our-team-title {
   color: #131318;
   font-size: 40px;
   font-weight: 800;
@@ -395,6 +405,12 @@ deals and discount section starts here
 .package-btn {
   margin-top: 48px;
 }
+
+/* .................................
+deals and discount section ends here
+.................................. */
+
+
 /* 
 .perfect-place section starts header */
 .perfect-place {
@@ -505,6 +521,55 @@ video {
 font-size: 32px;
 font-weight: 800;
 }
+/* .................................
+our team section starts here
+.................................. */
+.our-team{
+  text-align: center;
+}
+.our-team-content{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+}
+.our-team-text{
+  padding: 24px 0px;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  line-height: 26px; /* 162.5% */
+  padding: 10px;
+  
+}
+.team-member{
+  border: 3px solid #ff5400;
+  border-radius: 16px;
+}
+.team-image{
+ max-width: 100%;
+ height: 300px;
+
+  border-radius: 10px;
+}
+.team-designation{
+  color:#ff5400;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px;
+}
+.our-team{
+  text-align: center;
+}
+.social-media{
+  margin-top: 20px; ;
+}
+.social-media i{
+  padding: 10px;
+  color: #ff5400;
+}
+/* .................................
+our teams section ends here
+.................................. */
+
 /* ......................
 main section ends here
 .........................*/
@@ -717,6 +782,11 @@ line-height: normal;
     top: 75%;
       left: 55%;
   }
+  .our-team-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
 }
 @media screen and (max-width: 767px) and (min-width: 576px) {
   .section {
@@ -733,6 +803,14 @@ line-height: normal;
   }
   .banner-title {
     font-size: 48px;
+  }
+  .When,
+  .Where-go,
+  .Type {
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+    width: 100%;
   }
   .popular-tours {
     margin-top: 20px;
@@ -832,6 +910,11 @@ line-height: normal;
     top: 75%;
       left: 50%;
   }
+  .our-team-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
 }
 @media screen and (max-width: 575px) and (min-width: 320px) {
   .section {
@@ -857,6 +940,14 @@ line-height: normal;
   }
   .banner-title {
     font-size: 36px;
+  }
+  .When,
+  .Where-go,
+  .Type {
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+    width: 100%;
   }
   .popular-tours {
     margin-top: 20px;
@@ -977,5 +1068,13 @@ line-height: normal;
   .image-badge h3{
   font-size: 21px;
  
+  }
+  .footer-text,.footer-title{
+    font-size: 14px;
+  }
+  .our-team-content{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
   }
 }
