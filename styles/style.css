@@ -116,9 +116,7 @@ banner section starts here
   padding: 14px 20px;
   width: 174px;
 }
-.when{
-  
-}
+
 .banner-text {
   color: #fff;
   font-size: 16px;
@@ -184,6 +182,9 @@ popular tours section starts here
 .tour-btn {
   margin-top: 45px;
 }
+/* ......................
+popular tours section ends here
+........................*/
 /* ....................................
 choose destination section starts here
 ...................................... */
@@ -418,8 +419,9 @@ deals and discount section ends here
 .................................. */
 
 
-/* 
-.perfect-place section starts header */
+/* ...............................
+.perfect-place section starts here
+ ................................*/
 .perfect-place {
   display: flex;
   justify-content: space-evenly;
@@ -452,6 +454,7 @@ deals and discount section ends here
 .video-box {
   max-width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 video {
@@ -459,6 +462,25 @@ video {
   height: auto;
   display: block;
 }
+.thumbnail-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; 
+  font-size: 24px; 
+  text-align: center;
+  font-style: normal;
+font-weight: 700;
+line-height: 36px;
+}
+/* ...............................
+.perfect-place section ends here
+ ................................*/
+ /* ...............................
+newsletter section starts here
+ ................................*/
+
 .newsletter {
   display: flex;
   justify-content: space-evenly;
@@ -528,6 +550,9 @@ video {
 font-size: 32px;
 font-weight: 800;
 }
+/* ...............................
+newsletter section ends here
+ ................................*/
 /* .................................
 our team section starts here
 .................................. */
@@ -618,6 +643,9 @@ font-style: normal;
 font-weight: 300;
 line-height: normal;
 }
+/* ..........................
+responsive section starts here 
+.............................*/
 
 @media screen and (max-width: 1660px) and (min-width: 1200px) {
   .banner-box {
@@ -1115,6 +1143,12 @@ line-height: normal;
   .video-box {
     width: 100%;
   }
+  .thumbnail-text {
+    top: 45%;
+     left: 50%;
+     font-size: 20px; 
+     line-height: 30px;
+   }
   .newsletter {
     flex-direction: column;
     gap: 20px;
@@ -1151,4 +1185,9 @@ line-height: normal;
   .footer-title img{
     width: 20%;
   }
+  
+  
 }
+/* ..........................
+responsive section ends here 
+.............................*/
