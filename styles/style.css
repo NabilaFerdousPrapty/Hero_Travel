@@ -57,7 +57,9 @@ nav {
   color: #ff5400 !important;
   font-weight: 700;
 }
-
+#toggle {
+  display: none;
+}
 
 .bar {
   width: 30px;
@@ -112,6 +114,10 @@ banner section starts here
   background: #fff;
   border: none;
   padding: 14px 20px;
+  width: 174px;
+}
+.when{
+  
 }
 .banner-text {
   color: #fff;
@@ -787,6 +793,7 @@ line-height: normal;
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
   }
+  
 }
 @media screen and (max-width: 767px) and (min-width: 576px) {
   .section {
@@ -920,21 +927,84 @@ line-height: normal;
   .section {
     padding: 30px 18px;
   }
-  nav {
+  /* nav {
     flex-direction: column;
     gap: 20px;
-  }
+  } */
   .logo {
     font-size: 18px;
   }
-  .menu ul {
+  
+  /* .menu ul {
     flex-direction: column;
     gap: 18px;
+  } */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
   }
-  .menu ul {
-    flex-direction: column;
-    gap: 18px;
+  .bar {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--Dark-02, #424247);
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
   }
+
+  /* Rotate the first bar */
+  .hamburger:hover .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  .hamburger:hover .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  /* Rotate the third bar */
+  .hamburger:hover .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+/* Hide the menu by default */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  clip-path: circle(20px at 90% -10%);
+  -webkit-clip-path: circle(20px at 90% -10%);
+  transition: all 1s ease-out;
+  pointer-events: none;
+}
+/* Show the menu when checked */
+#toggle:checked + .hamburger + .menu {
+  clip-path: circle(100px at 90% -10%);
+  -webkit-clip-path: circle(1000px at 90% -10%);
+  pointer-events: all;
+}
+
+/* Style the menu items */
+.menu ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  text-align: center;
+}
+.menu ul li {
+  display: block;
+  margin: 20px 0;
+}
+
+.menu ul li a {
+  color: white;
+}
   .banner-box {
     flex-direction: column;
   }
@@ -1076,5 +1146,8 @@ line-height: normal;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 30px;
+  }
+  .footer-title img{
+    width: 20%;
   }
 }
